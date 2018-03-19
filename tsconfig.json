@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "sourceMap": true,
+	"allowJs": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "rootDir": "./",
+	"outDir": "./build",
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "mobile-robotics-map-tools": ["declarations/mobile-robotics-map-tools.d.ts"],  // override definition for moment
+      "protobuf": ["declarations/protobuf-index.d.ts"]  // override definition for moment
+    }
+	
+  },
+  "files": [
+    "./map-view.module.ts"
+  ],
+  "angularCompilerOptions": {
+    "skipTemplateCodegen": true
+  }
+}

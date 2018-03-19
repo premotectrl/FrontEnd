@@ -1,0 +1,14 @@
+<div class="col-xs-12 table-container" style="padding: 0">
+    <table align="center">
+        <tr>
+            <td>
+            <span id="faults-tile-fault-count" [ngClass]="['badge loose-badge', numbOfMobileAssets <= 0 ? 'badge-danger' : 'badge-kuka-gray']">{{devices?.length}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span [ngClass]="{error: numbOfMobileAssets <= 0}">AGVs in the current scope</span>
+            </td>
+        </tr>
+    </table>
+</div>
